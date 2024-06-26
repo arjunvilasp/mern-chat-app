@@ -1,0 +1,21 @@
+.notfound-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+
+.notfound-container > img{
+    width: 30%;
+}
+
+.notfound-container > h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(203, 199, 199);
+}
+

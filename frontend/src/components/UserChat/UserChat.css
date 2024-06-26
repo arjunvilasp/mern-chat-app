@@ -1,0 +1,40 @@
+.user-chat{
+    height: 60px;
+    width:95%;
+    margin:8px auto;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.user-chat:hover{
+    background-color: #fff;
+}
+
+.user-chat > .user-profile{
+    flex: 1;
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.user-chat .chat-detail{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-chat .online-indicator{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(44, 179, 44);
+    position: absolute;
+    top: 5px;
+    left: 55px;
+}

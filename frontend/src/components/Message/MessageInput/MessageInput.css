@@ -1,0 +1,30 @@
+.message-input{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.message-input > form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.message-input > form > input[type="text"]{
+    height: 40px;
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+}
+.message-input > form > button{
+    height: 40px;
+    width: 10%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}

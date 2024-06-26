@@ -1,0 +1,55 @@
+.message-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.align{
+    align-self: flex-end;
+}
+
+.message-container .user-profile1{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    order: 1;
+}
+
+.message-container .user-profile2{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    order: 2;
+}
+
+
+.message-container .message1{
+    background-color: rgb(84, 130, 211);
+    color: #fff;
+    padding: 5px;
+    order: 1;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+}
+
+.message-container .message2{
+    background-color: rgb(169, 169, 172);
+    padding: 5px;
+    order: 2;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;border-radius: 8px;
+    border-bottom-left-radius: 0;
+}
+
+.sender{
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+.receiver{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}

@@ -1,0 +1,26 @@
+.conversations-container {
+  height: calc(90vh - 100px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversations-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.conversations-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.conversations-container::-webkit-scrollbar-thumb {
+  background-color: #2d9bc4;
+  border-radius: 10px;
+  border: 2px solid #2d9bc4;
+}
+
+.conversations-container .no-conversation{
+  text-align: center;
+  margin-top: 200px;
+  color: rgba(255,255,255,0.6);
+}
