@@ -37,7 +37,7 @@ export const registerAuth = async (req,res)=>{
             await newUser.save();
 
             if(newUser){
-                generateJwtTokenAndSetCookie(newUser._id,res);
+                await generateJwtTokenAndSetCookie(newUser._id,res);
                 res.status(201).json({
                     message : "User created successfully.!",
                     _id : newUser._id,
@@ -54,7 +54,7 @@ export const registerAuth = async (req,res)=>{
     }
     catch(err){
         console.log("Internal server Error..!");
-        res.status(500).json({error:`Internal server error-${err.messsage}`});
+        res.status(500).json({error:`Internal server error-${err}`});
     }
     
 }
@@ -70,10 +70,10 @@ export const loginAuth = async (req,res)=>{
 
     if(!user || !isPasswordCorrect){
         console.log("Invalid username or password");
-        res.status(400).json({message:'Invalid username or password..!'});
+        res.status(400).json({error:'Invalid username or password..!'});
     }
     else{
-        generateJwtTokenAndSetCookie(user._id,res);
+        await generateJwtTokenAndSetCookie(user._id,res);
         res.status(200).json({
             message : "Login successfull.",
             _id : user._id,
