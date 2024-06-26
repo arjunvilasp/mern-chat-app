@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy:{
       '/api':{
-        target : 'https://mern-chat-app-backend-3yig.onrender.com'
+        target : 'https://mern-chat-app-backend-p93r.onrender.com'
       }
     }
   },
