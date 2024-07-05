@@ -10,7 +10,7 @@ const useGetMessages = () => {
         const getMessages = async (message) => {
             setLoading(true);
             try {
-                const res = await fetch(`/api/message/${selectedConversation._id}`);
+                const res = await fetch(`https://mern-chat-app-backend-p93r.onrender.com/api/message/${selectedConversation._id}`);
     
                 const data = await res.json();
 
