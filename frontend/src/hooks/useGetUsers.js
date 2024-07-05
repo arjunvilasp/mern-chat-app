@@ -11,7 +11,6 @@ const useGetUsers = () => {
             try {
                 const res = await fetch('https://mern-chat-app-backend-p93r.onrender.com/api/users',{
                     method : 'GET',
-                    credentials : 'include'
                 });
                 const data = await res.json();
                 if(data.error){
