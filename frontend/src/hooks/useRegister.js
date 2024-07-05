@@ -17,7 +17,7 @@ const useRegister =  () => {
 
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:3001/api/auth/register',{
+            const response = await fetch('https://mern-chat-app-backend-p93r.onrender.com/api/auth/register',{
                 method:'POST',
                 headers : {"Content-Type" : "application/json"},
                 body : JSON.stringify({firstName,lastName,username,email,gender,password,confirmPassword})
