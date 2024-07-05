@@ -9,7 +9,7 @@ const useSendMessage = () => {
     const sendMessage = async (message) => {
         setLoading(true);
         try {
-            const res = await fetch(`/api/message/send/${selectedConversation._id}`, {
+            const res = await fetch(`https://mern-chat-app-backend-p93r.onrender.com/api/message/send/${selectedConversation._id}`, {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message })
